@@ -1,0 +1,117 @@
+    1  yum update
+    2  yum install docker
+    3  systemctl start docker
+    4  systemctl enable docker
+    5  systemctl status docker
+    6  yum install vim
+    7  systemctl status docker
+    8  vim Dockerfile
+    9  ll
+   10  vim Dockerfile
+   11  pwd
+   12  cd /root
+   13  ll
+   14  docker build .
+   15  vim Dockerfile 
+   16  docker build .
+   17  docker image ls
+   18  docker build .
+   19  docker build -t demo:image01 .
+   20  docker image ls
+   21  docker run c812defcd4b8 /bin/bash
+   22  docker ps -a
+   23  docker run c812defcd4b8 /bin/sh
+   24  docker run c812defcd4b8
+   25  docker run c812defcd4b8 /bin/sh
+   26  docker run c812defcd4b8
+   27  docker run demo:image01
+   28  vim dockerfile
+   29  rm -rf Dockerfile 
+   30  ll
+   31  docker build .
+   32  docker run 8a954c2a56cb
+   33  ll
+   34  cp dockerfile Dockerfile
+   35  ll
+   36  vim Dockerfile
+   37  rm -rf dockerfile
+   38  docker build .
+   39  docker run 8a954c2a56cb
+   40  docker image ls
+   41  docker run c812defcd4b8
+   42  ll
+   43  docker build .
+   44  rm -rf Dockerfile 
+   45  docker rm image 8a954c2a56cb
+   46  docker image ls
+   47  docker ps -a
+   48  docker rm 8a954c2a56cb
+   49  mkdir test
+   50  cd test/
+   51  vim Dockerfile
+   52  docker build .
+   53  vim Dockerfile
+   54  docker run c812defcd4b8 /bash/echo
+   55  docker run c812defcd4b8 /bin/echo
+   56  yum update
+   57  yum install wget unzip
+   58  sudo wget https://releases.hashicorp.com/terraform/0.12.2/terraform_0.12.2_linux_amd64.zip
+   59  ll
+   60  unzip ./terraform_0.12.2_linux_amd64.zip –d /usr/local/bin
+   61  unzip ./terraform_0.12.2_linux_amd64.zip /usr/local/bin
+   62  ll
+   63  chmod 775 terraform_0.12.2_linux_amd64.zip 
+   64  unzip ./terraform_0.12.2_linux_amd64.zip –d /usr/local/bin
+   65  ll
+   66  sudo unzip ./terraform_0.12.2_linux_amd64.zip –d /usr/local/bin
+   67  mv terraform_0.12.2_linux_amd64.zip /usr/local/bin/
+   68  cd /usr/local/bin/
+   69  ll
+   70  unzip ./terraform_0.12.2_linux_amd64.zip 
+   71  terraform -v
+   72  cd ~
+   73  ll
+   74  cd test/
+   75  ll
+   76  vim Dockerfile 
+   77  docker build -t nathdeb006/demo-image:image01 .
+   78  docker image ls
+   79  docker login
+   80  docker push nathdeb006/demo-image:image01
+   81  ls
+   82  docker image ls
+   83  cd ~
+   84  git clone https://github.com/nath-deb/go-app.git
+   85  yum install git -y
+   86  history 
+   87  docker build --help
+   88  docker run -d --name httpd -p 8081:80 httpd
+   89  docker ps
+   90  docker run -d --name httpd01 -p 9091:80 httpd
+   91  docker ps
+   92  hostnamectl set-hostname master
+   93  reboot 
+   94  git clone https://github.com/nath-deb/docker-swarm-demo.git
+   95  ll
+   96  cd docker-swarm-demo
+   97  ll
+   98  vim docker-compose.yml 
+   99  vim Dockerfile
+  100  vim docker-compose.yml 
+  101  docker swarm init
+  102  pwd
+  103  ll
+  104  docker stack deploy nodeapp -c docker-compose.yml
+  105  docker node ls
+  106  docker stack ls
+  107  docker stack services nodeapp
+  108  docker stack ps nodeapp
+  109  docker service scale nodeapp_web=3
+  110  docker stack services nodeapp
+  111  docker stack ps nodeapp
+  112  docker stack services nodeapp
+  113  ll
+  114  vim docker-compose.yml 
+  115  docker stack services nodeapp
+  116  docker stack ps nodeapp
+  117  history >> master_history.txt
